@@ -1,0 +1,34 @@
+sudo: false
+
+language: go
+
+arch:
+    - amd64
+    - arm64
+go:
+  - master
+
+os:
+  - linux
+
+branches:
+  only:
+  - master
+
+install:
+  - chmod +x build-docs.sh
+
+script:
+  - ./build-docs.sh prerequisites
+  - ./build-docs.sh ext-docs
+  - ./build-docs.sh update-page all
+  - ./build-docs.sh build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local-dir: docs/public
+  github_token: $GITHUB_TOKEN
+  email: $EMAIL
+  on:
+    branch: master

@@ -1,0 +1,26 @@
+# Site settings
+baseurl = "https://tibcosoftware.github.io/flogo/showcases/"
+languageCode = "en-us"
+title = "Showcase of awesome projects for Flogo"
+theme = "hugrid"
+
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+
+[params]
+    # Meta
+    siteAssetUrl = "/assets/"
+    title = "Showcase"
+    subtitle = "Showcase of awesome activities, triggers and apps for Flogo!"
+    author = "tibcosoftware"
+    description = "Showcase of awesome activities, triggers and apps for Flogo"
+
+    # Preview container button text
+    buttontext = "Get the project"
+
+    # Footer text
+    footertext = "Made by [Codrops](http://tympanus.net/codrops/2013/03/19/thumbnail-grid-with-expanding-preview/), [Hugo](http://gohugo.io) and [aerohub](https://github.com/aerohub). Updated by [tibcosoftware](https://github.com/TIBCOSoftware)"
+
+    # add extra-css
+    # custom_css = ['css/extra1.css', 'css/extra2.css']
